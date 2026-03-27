@@ -6,7 +6,7 @@ export default function Index() {
       <View style={styles.contenitore}>
         <View style={styles.box}>
           <View style={styles.boxName}>
-            <Text>RC</Text>
+            <Text style={styles.iniziali}>RC</Text>
           </View>
           <Text style={styles.mainNome}>Roberto Cammarata</Text>
           <Text style={styles.subName}>Junior Frontend Developer</Text>
@@ -33,10 +33,20 @@ const styles = StyleSheet.create({
   },
 
   boxName: {
-    borderRadius: 15,
-    borderStyle: "solid",
+    borderRadius: 28,
     borderColor: "#818cf8",
-    height: 40,
+    height: 56,
+    width: 56,
+    justifyContent: "center",
+    alignItems: "center",
+    borderWidth: 2,
+    backgroundColor: "#818cf8",
+  },
+
+  iniziali: {
+    color: "#1e1b4b",
+    fontWeight: "500",
+    fontSize: 16,
   },
 
   mainNome: {
